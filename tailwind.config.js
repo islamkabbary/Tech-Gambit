@@ -8,8 +8,8 @@ module.exports = {
         secondary: "#06D889",
       },
       fontFamily: {
-        crimson: ['Crimson Pro', 'sans-serif'],
-        saira: ['Saira', 'sans-serif'],
+        'saira': ['Saira', 'sans-serif'],
+        'saira-condensed': ['Saira Condensed', 'sans-serif'],
       },
       fontSize: {
         '6xl': '54px',
@@ -18,4 +18,5 @@ module.exports = {
   },
   plugins: [],
 }
+
 
