@@ -43,3 +43,15 @@ function newsTickerHandler() {
 		},
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+//

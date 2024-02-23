@@ -67,11 +67,11 @@ main {
 }
 
 .button-primary {
-  @apply w-[230px] h-14 bg-[#06D889] text-[#FFFFFF] font-normal text-2xl leading-7 rounded-md font-saira
+  @apply md:w-[230px] w-[180px] h-14 bg-[#06D889] text-[#FFFFFF] font-normal md:text-2xl text-lg leading-7 rounded-md font-saira
 }
 
 .button-secondary {
-  @apply w-[215px] h-14 bg-transparent border-2 border-[#06D889] text-[#06D889] font-normal text-2xl leading-7 rounded-md font-saira
+  @apply md:w-[215px] w-[165px] h-14 bg-transparent border-2 border-[#06D889] text-[#06D889] font-normal md:text-2xl text-lg leading-7 rounded-md font-saira
 }
 
 .nav-item {
@@ -95,14 +95,29 @@ ul li a{
   font-family: Saira Condensed, sans-serif;
 }
 
-#rotat-image {
+#rotat-text {
   animation: rotation 30s infinite linear;
   -webkit-animation: rotation 30s infinite linear;
+}
+
+.text-stroke {
+  -webkit-text-stroke-width: 0.2px; /* Webkit text stroke width */
+  -webkit-text-stroke-color: #FFFFFF; /* Webkit text stroke color */
 }
 
 /* Slide Department */
 [x-cloak] {
   display: none;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #FFFFFF;
+}
+
+.text-stroke-green {
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #06D889;
 }
 
 /*swiper*/
