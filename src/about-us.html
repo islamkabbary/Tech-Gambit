@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+	<title>Tech Gambit</title>
+	<link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" style="background-color: black;">
+	<link href="./output.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.4.1/dist/alpine.min.js" defer="defer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
+</head>
+
+<body class="overflow-x-hidden relative font-saira">
+	<header class="relative border-b-2 border-[#9C9C9C]">
+		<div class="py-3 flex justify-between items-center container">
+			<div id="logo">
+				<a href="/src/"><img src="./assets/logo.svg" alt="" class="aspect-square" width="96" height="74"></a>
+			</div>
+			<div class="hidden lg:flex">
+				<nav
+					class="md:flex justify-center items-center hidden lg:gap-5 md:gap-3 opacity-70 text-center lg:text-lg md:text-sm capitalize">
+					<a href="/src/" class="nav-item">
+						Home
+					</a>
+					<a href="" class="nav-item current-nav-link">
+						about us
+					</a>
+					<a href="" class="nav-item">
+						services
+					</a>
+					<a href="" class="nav-item">
+						services
+					</a>
+					<a href="" class="nav-item">
+						contact us
+					</a>
+				</nav>
+			</div>
+			<button class="button-secondary capitalize">request a quote</button>
+		</div>
+	</header>
+	<main class="relative bg-[url('assets/bg-about-us.svg')]">
+		<img src="assets/shadow.svg" class="absolute left-0 bottom-0 transform -translate-x-1/2" width="203"
+			height="203">
+		<div class="absolute md:top-1/2 top-[55%] right-12 transform -translate-y-1/2 text-white z-0">
+			<img src="./assets/facebook.svg" class="mb-10">
+			<div class="w-2 h-2 bg-[#646464] ml-0.5 rounded-full mb-10"></div>
+			<img src="./assets/x.svg" class="mb-10">
+			<div class="w-2 h-2 bg-[#646464] ml-0.5 rounded-full mb-10"></div>
+			<img src="./assets/insta.svg">
+		</div>
+		<div class="container h-screen max-h-[350px]">
+			<div class="cent flex-col h-full mt-2.5">
+				<h1 class="font-saira font-extrabold text-7xl text-center text-stroke-green capitalize">about us</h1>
+				<div class="flex gap-3">
+					<a href="" class="text-white font-saira">
+						Home
+					</a>
+					<img src="assets/arrow-link.svg">
+					<a href="" class="text-secondary font-saira capitalize">
+						about us
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<section class="container mt-16">
+		<div class="grid md:grid-cols-2">
+			<img src="assets/hero-about.svg">
+			<div class="md:mt-0 mt-10">
+				<h1 class="main-title custom-shadow">who we are</h1>
+				<p
+					class="font-saira-condensed font-normal text-white text-2xl mt-4 leading-9 md:text-start text-center">
+					TechGambit began as a shared vision among group of friends - developers and UI/UX designers - who
+					shared a love for technology and a desire to make a difference. Inspired by the strategic brilliance
+					of chess and the concept of the Queen's Gambit opening move, we founded TechGambit with a mission to
+					help businesses make their mark in the digital arena.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="container md:mt-36 mt-20">
+		<div class="grid md:grid-cols-3">
+			<div class="md:col-span-1 main-title custom-shadow">our vision</div>
+			<div
+				class="md:col-span-2 font-saira-condensed font-normal text-white text-2xl mt-4 leading-9 md:text-start text-center mb-8">
+				At TechGambit, we aim to be the best at creating new digital ideas that help businesses <br> grow
+				online.</div>
+		</div>
+		<hr class="border-t border-white border-opacity-20 w-4/5 mx-auto">
+		<div class="grid md:grid-cols-3 mt-8">
+			<div class="col-span-1 main-title custom-shadow">our mission</div>
+			<div
+				class="md:col-span-2 font-saira-condensed font-normal text-white text-2xl mt-4 leading-9 md:text-start text-center mb-8">
+				Our job is to make sure our clients get the best digital help possible, so they can do well <br> in the
+				online world.</div>
+		</div>
+		<hr class="border-t border-white border-opacity-20 w-4/5 mx-auto">
+		<div class="grid md:grid-cols-3 mt-8">
+			<div class="md:col-span-1 main-title custom-shadow">our values</div>
+			<div
+				class="md:col-span-2 font-saira-condensed font-normal text-white text-2xl mt-4 leading-9 md:text-start text-center mb-8">
+				We believe in being honest, trying new things, and working together as a team.</div>
+		</div>
+	</section>
+	<section class="container bg-[#2d2d2d] rounded-3xl md:mt-[132px] mt-20">
+		<div class="grid md:grid-cols-4 md:gap-20 gap-10 p-9">
+			<div class="cent flex-col gap-5">
+				<img src="assets/project-management.svg" width="60" height="60">
+				<p class="text-5xl font-bold text-stroke-white capitalize">250+</p>
+				<p class="text-white text-[22px] capitalize">project completed</p>
+			</div>
+			<div class="cent flex-col gap-5">
+				<img src="assets/rating-stars.svg" width="60" height="60">
+				<p class="text-5xl font-bold text-stroke-white capitalize">150+</p>
+				<p class="text-white text-[22px] capitalize">satisfied clients</p>
+			</div>
+			<div class="cent flex-col gap-5">
+				<img src="assets/team.svg" width="60" height="60">
+				<p class="text-5xl font-bold text-stroke-white capitalize">20+</p>
+				<p class="text-white text-[22px] capitalize">expert employee</p>
+			</div>
+			<div class="cent flex-col gap-5">
+				<img src="assets/experience.svg" width="60" height="60">
+				<p class="text-5xl font-bold text-stroke-white capitalize">5+</p>
+				<p class="text-white text-[22px] capitalize">years of experience</p>
+			</div>
+		</div>
+	</section>
+	<section class="container md:mt-36 mt-20">
+		<div class="grid md:grid-cols-2 gap-16">
+			<div>
+				<h1 class="main-title custom-shadow">Why Choose Us</h1>
+				<p
+					class="font-saira-condensed font-normal text-white text-2xl mt-4 leading-9 md:text-start text-center">
+					Choose TechGambit for our proven track record, technical expertise, and commitment to customer
+					satisfaction. We prioritize quality, reliability, and innovation in everything we do, ensuring our
+					clients achieve the best possible outcomes.
+				</p>
+			</div>
+			<div class="cent">
+				<img src="assets/why-choose-us.svg">
+			</div>
+		</div>
+	</section>
+	<section class="cent flex-col mt-28 bg-[url('assets/chese.svg')] !h-[355px]">
+		<h1 class="font-saira font-extrabold text-7xl text-center text-stroke-white">let’s talk about your <br> next
+			project</h1>
+		<div class="cent my-6">
+			<button class="button-primary capitalize">contact us</button>
+		</div>
+	</section>
+	<footer>
+		<div class="md:grid grid-flow-col md:mt-16 mt-8 container md:gap-44 gap-12">
+			<div class="col-span-2 cent py-5 md:py-0 flex-col gap-2">
+				<h5>
+					<img src="./assets/logo.svg" width="105" height="136">
+				</h5>
+			</div>
+			<div class="flex py-5 md:py-0 flex-col gap-2">
+				<h5 class="main-title !text-lg">Services</h5>
+				<ul>
+					<li class="footer-item"><a href="">Email Marketing</a></li>
+					<li class="footer-item"><a href="">Campaigns</a></li>
+					<li class="footer-item"><a href="">Branding</a></li>
+					<li class="footer-item"><a href="">Offline</a></li>
+				</ul>
+			</div>
+			<div class="flex py-5 md:py-0 flex-col gap-2">
+				<h5 class="main-title !text-lg">About</h5>
+				<ul>
+					<li class="footer-item"><a href="">Our Story</a></li>
+					<li class="footer-item"><a href="">Benefits</a></li>
+					<li class="footer-item"><a href="">Team</a></li>
+					<li class="footer-item"><a href="">Careers</a></li>
+				</ul>
+			</div>
+			<div class="flex py-5 md:py-0 flex-col gap-2">
+				<h5 class="main-title !text-lg">Follow Us</h5>
+				<ul>
+					<li><a class="flex w-5 gap-3"><img src="assets/facebook.svg">facebook</a></li>
+					<li><a class="flex w-5 gap-3"><img src="assets/x.svg">Twitter</a></li>
+					<li><a class="flex w-5 gap-3"><img src="assets/insta.svg">Instagram</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="w-full container h-0.5 bg-white opacity-20 mt-3"></div>
+		<div class="cent md:flex-row flex-col py-5 mx-auto gap-6">
+			<span class="font-saira-condensed text-base text-white opacity-60">Copyright © 2024. TechGambit. All rights
+				reserved.</span>
+			<div class="flex gap-3">
+				<a href="" class="text-white font-saira-condensed text-base">Terms & Conditions</a>
+				<a href="" class="text-white font-saira-condensed text-base">Privacy Policy</a>
+			</div>
+		</div>
+	</footer>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>

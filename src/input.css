@@ -39,15 +39,9 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1350px;
+    max-width: 1322px;
   }
 }
 
@@ -67,15 +61,30 @@ main {
 }
 
 .button-primary {
-  @apply md:w-[230px] w-[180px] h-14 bg-[#06D889] text-[#FFFFFF] font-normal md:text-2xl text-lg leading-7 rounded-md font-saira
+  @apply md:w-[230px] w-[180px] h-14 bg-secondary text-[#FFFFFF] font-normal md:text-2xl text-lg leading-7 rounded-md font-saira
 }
 
 .button-secondary {
-  @apply md:w-[215px] w-[165px] h-14 bg-transparent border-2 border-[#06D889] text-[#06D889] font-normal md:text-2xl text-lg leading-7 rounded-md font-saira
+  @apply md:w-[215px] w-[165px] h-14 bg-transparent border-2 border-secondary text-secondary font-normal md:text-2xl text-lg leading-7 rounded-md font-saira
 }
 
+/* Nav */
 .nav-item {
-  @apply text-[#FFFFFF] text-2xl leading-7 font-normal after:inline-block after:w-1.5 after:h-1.5 after:bg-gray-400 after:rounded-full after:ml-3
+  @apply text-[#FFFFFF] text-2xl py-5 relative leading-7 font-normal hover:text-secondary before:transition-all before:duration-[400ms] before:h-[3px] before:absolute before:bg-secondary before:rounded-[50px] before:w-0 before:bottom-2.5 after:inline-block after:w-1.5 after:h-1.5 after:bg-gray-400 after:rounded-full after:ml-3
+}
+
+.nav-item:hover::before {
+  width: 35%;
+  margin-inline: auto;
+}
+
+.current-nav-link {
+  color: #06D889;
+}
+
+.current-nav-link::before {
+  width: 35%;
+  bottom: 10px;
 }
 
 .custom-shadow {
@@ -83,14 +92,14 @@ main {
 }
 
 .main-title {
-  @apply font-saira font-normal text-[32px] leading-[50px] text-[#06D889] capitalize custom-shadow md:text-start text-center
+  @apply font-saira font-normal text-[32px] leading-[50px] text-secondary capitalize custom-shadow md:text-start text-center
 }
 
 .footer-item {
   @apply font-saira-condensed text-white capitalize md:text-start text-center
 }
 
-ul li a{
+ul li a {
   color: white;
   font-family: Saira Condensed, sans-serif;
 }
@@ -101,8 +110,10 @@ ul li a{
 }
 
 .text-stroke {
-  -webkit-text-stroke-width: 0.2px; /* Webkit text stroke width */
-  -webkit-text-stroke-color: #FFFFFF; /* Webkit text stroke color */
+  -webkit-text-stroke-width: 0.2px;
+  /* Webkit text stroke width */
+  -webkit-text-stroke-color: #FFFFFF;
+  /* Webkit text stroke color */
 }
 
 /* Slide Department */
@@ -111,12 +122,12 @@ ul li a{
 }
 
 .text-stroke-white {
-  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
 }
 
 .text-stroke-green {
-  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #06D889;
 }
 
@@ -181,6 +192,10 @@ ul li a{
 .swiper .swiper-slide.swiper-slide-active {
   opacity: 1;
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .swiper .swiper-nav-wrapper {
@@ -246,6 +261,10 @@ ul li a{
 
 .swiper .swiper-pagination .swiper-pagination-bullet-active {
   transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 
 .swiper .swiper-pagination.swiper-pagination-horizontal {
